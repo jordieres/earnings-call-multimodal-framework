@@ -1,0 +1,8 @@
+sphinx>=6.2
+sphinx-rtd-theme>=3.0.2
+sphinx-autodoc-typehints>=1.23.0
+myst-parser>=0.19.2 ; python_version >= "3.8"  # si usas Markdown
+furo>=2024.7.18  # si usas el tema Furo
+docutils>=0.19
+markdown-it-py>=2.2.0
+

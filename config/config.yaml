@@ -1,0 +1,52 @@
+conferences_data_adquisition:
+  api_key: '****' # Replace with your actual API key
+  base_path: './data/downloads' # Path where the folder with downloaded files structure will be generated
+  url: 'https://earningscall.biz/sp-500-holdings' # URL to know the S&P500 entities
+
+conferences_processing:
+  default:
+    input_csv_path: ./data/paths.csv
+    qa_models:
+      - llama3:8b
+      - gemma2:9b
+      - phi4
+    monologue_models:
+      - llama3:8b
+      - llama3.1:8b
+      - deepseek-r1:14b
+    sec10k_models:
+      - qwen2:7b
+      - gemma2:9b
+      - qwen2.5:7b
+    qa_analyzer_models:
+      - llama3:8b
+      - gemma2:9b
+      - phi4
+    embeddings:
+      audio:
+        enabled: true
+        model_name: "iic/emotion2vec_plus_seed"
+      text:
+        enabled: true
+        model_name: "j-hartmann/emotion-english-distilroberta-base"
+    evals: 3
+    device: cuda
+    verbose: 1
+
+
+embeddings_pipeline:
+  default:
+    node_encoder:
+      hidden_dim: 128
+      meta_dim: 32
+      n_heads: 8
+      d_output: 512
+      weights_path: "./weights/node_encoder_best.pt"
+    conference_encoder:
+      hidden_dim: 256
+      input_dim: 512
+      n_heads: 4
+      d_output: 512
+      weights_path: "./weights/conference_encoder_best.pt"
+    device: cuda
+    
