@@ -1,37 +1,24 @@
 cff-version: 1.2.0
-message: "If you use this repository, please cite the associated paper."
+message: "If you use this repository, please cite this software."
 title: "Multimodal Framework for Population-Level Analysis of Earnings Call Discourse"
 type: software
 authors:
   - family-names: "Álvarez Castro"
     given-names: "Alejandro"
     affiliation: "Universidad Politécnica de Madrid"
-    orcid: "https://orcid.org/0000-0000-0000-0000"
   - family-names: "Ordieres-Meré"
     given-names: "Joaquín"
     affiliation: "Universidad Politécnica de Madrid"
-    orcid: "https://orcid.org/0000-0000-0000-0000"
 repository-code: "https://github.com/jordieres/earnings-call-multimodal-framework"
 license: "MIT"
 abstract: "Code and documentation supporting a multimodal framework for the population-level analysis of earnings call Q&A interactions, integrating topic modeling, multimodal emotional representations, and firm-level effect-size aggregation."
 keywords:
-  - multimodal analysis
-  - earnings calls
-  - corporate communication
-  - discourse analysis
-  - topic modeling
-  - emotion analysis
-  - population-level analysis
-date-released: 2026-03-14
-version: "1.0.0"
-preferred-citation:
-  type: article
-  authors:
-    - family-names: "Álvarez Castro"
-      given-names: "Alejandro"
-    - family-names: "Ordieres-Meré"
-      given-names: "Joaquín"
-  title: "A Multimodal Framework for Population-Level Analysis of Earnings Call Discourse"
-  journal: "AI+"
-  year: 2026
-  status: "submitted"
+  - "multimodal analysis"
+  - "earnings calls"
+  - "corporate communication"
+  - "discourse analysis"
+  - "topic modeling"
+  - "emotion analysis"
+  - "population-level analysis"
+version: "1.0.5"
+date-released: 2026-03-15
