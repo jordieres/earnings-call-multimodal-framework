@@ -209,3 +209,8 @@ __marimo__/
 # model weights
 *.pt
 weights/
+
+data/
+*.mp3
+*.wav
+*.flac

@@ -67306,6 +67306,9 @@ Some steps may require external datasets or pretrained models not included in th
 ## Citation
 
 If you use this repository, please cite the associated paper once available.
+Beacuse of its size, the data/companies repository was published over zenodo with DOI: https://doi.org/10.5281/zenodo.19030118 
+
+The structure is the one described above.
 
 ---
 
