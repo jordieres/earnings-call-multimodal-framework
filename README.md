@@ -46,6 +46,12 @@ The current release is intended for research reproducibility and methodological 
 
 ## Repository Structure
 
+Although presented here in the tree of files ```data/companies``` have been compressed and released into a Zenodo repository located at: https://zenodo.org/records/19032377
+You should download them and place the unzipped folders accordingly.
+
+<details>
+<summary>Repository tree (click to expand)</summary>
+
 ```text
 ├── CITATION.cff
 ├── LICENSE
@@ -67192,6 +67198,7 @@ The current release is intended for research reproducibility and methodological 
 
 20606 directories, 46537 files
 ```
+</details>
 
 ---
 
