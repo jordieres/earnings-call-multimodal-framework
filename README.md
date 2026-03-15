@@ -44,6 +44,131 @@ The current release is intended for research reproducibility and methodological 
 
 ---
 
+## Main Components
+
+**Preprocessing**
+
+Parsing transcripts and aligning audio segments at the Q&A interaction level.
+
+**Topic Modeling**
+
+Transformer-based semantic topic extraction for analyst questions and managerial responses.
+
+**Emotion Extraction**
+
+Multimodal emotional signal estimation from textual and acoustic inputs.
+
+**Aggregation**
+
+Firm-level standardized effect size computation and population-level summaries.
+
+**Visualization**
+
+Generation of figures and tables for semantic and emotional analysis.
+
+---
+
+## Installation
+
+```bash
+pip install poetry
+poetry install
+```
+
+---
+
+## Basic Workflow
+
+### Configure paths
+
+Edit:
+
+```bash
+config/config.yaml
+```
+
+
+### Prepare input data
+
+Create a CSV file listing earnings call folders containing transcripts and metadata.
+
+### Run preprocessing
+
+```bash
+poetry run earningscall_framework process config/config.yaml --config-name default
+```
+
+### Generate embeddings and emotion features
+
+Single file:
+
+```bash
+poetry run earningscall_framework embed config/config.yaml --config-name default --json-path /path/to/file.json
+
+```
+Multiple files:
+
+```bash
+poetry run earningscall_framework embed config/config.yaml --config-name default --json-csv data/json_paths.csv
+
+```
+
+### Run aggregation and visualization
+
+Use notebooks in:
+
+```bash
+notebooks/
+
+```
+
+---
+
+## Outputs
+
+Typical outputs include:
+
+- annotated Q&A interaction tables
+- topic assignments and keywords
+- emotion scores from text and audio
+- firm-level effect sizes
+- population-level visualizations
+
+---
+
+## Data
+
+The repository is designed to work with publicly available earnings call materials and/or datasets provided by third-party data providers.
+
+Due to licensing restrictions, raw data may not be redistributed through this repository.
+
+---
+
+## Reproducibility
+
+The repository is organized to reproduce the methodological pipeline described in the associated paper.
+
+Some steps may require external datasets or pretrained models not included in this public release.
+
+---
+
+## Citation
+
+If you use this repository, please cite the associated paper once available.
+Beacuse of its size, the data/companies repository was published over zenodo with DOI: https://doi.org/10.5281/zenodo.19030118 
+
+The structure is the one described above.
+
+---
+
+## License
+
+License is GNU General Public License v3.0
+
+
+
+---
+
 ## Repository Structure
 
 Although presented here in the tree of files ```data/companies``` have been compressed and released into a Zenodo repository located at: https://zenodo.org/records/19032377
@@ -67199,130 +67324,3 @@ You should download them and place the unzipped folders accordingly.
 20606 directories, 46537 files
 
 </details> ```
-
----
-
-## Main Components
-
-**Preprocessing**
-
-Parsing transcripts and aligning audio segments at the Q&A interaction level.
-
-**Topic Modeling**
-
-Transformer-based semantic topic extraction for analyst questions and managerial responses.
-
-**Emotion Extraction**
-
-Multimodal emotional signal estimation from textual and acoustic inputs.
-
-**Aggregation**
-
-Firm-level standardized effect size computation and population-level summaries.
-
-**Visualization**
-
-Generation of figures and tables for semantic and emotional analysis.
-
----
-
-## Installation
-
-```bash
-pip install poetry
-poetry install
-```
-
----
-
-## Basic Workflow
-
-### Configure paths
-
-Edit:
-
-```bash
-config/config.yaml
-```
-
-
-### Prepare input data
-
-Create a CSV file listing earnings call folders containing transcripts and metadata.
-
-### Run preprocessing
-
-```bash
-poetry run earningscall_framework process config/config.yaml --config-name default
-```
-
-### Generate embeddings and emotion features
-
-Single file:
-
-```bash
-poetry run earningscall_framework embed config/config.yaml --config-name default --json-path /path/to/file.json
-
-```
-Multiple files:
-
-```bash
-poetry run earningscall_framework embed config/config.yaml --config-name default --json-csv data/json_paths.csv
-
-```
-
-### Run aggregation and visualization
-
-Use notebooks in:
-
-```bash
-notebooks/
-
-```
-
----
-
-## Outputs
-
-Typical outputs include:
-
-- annotated Q&A interaction tables
-- topic assignments and keywords
-- emotion scores from text and audio
-- firm-level effect sizes
-- population-level visualizations
-
----
-
-## Data
-
-The repository is designed to work with publicly available earnings call materials and/or datasets provided by third-party data providers.
-
-Due to licensing restrictions, raw data may not be redistributed through this repository.
-
----
-
-## Reproducibility
-
-The repository is organized to reproduce the methodological pipeline described in the associated paper.
-
-Some steps may require external datasets or pretrained models not included in this public release.
-
----
-
-## Citation
-
-If you use this repository, please cite the associated paper once available.
-Beacuse of its size, the data/companies repository was published over zenodo with DOI: https://doi.org/10.5281/zenodo.19030118 
-
-The structure is the one described above.
-
----
-
-## License
-
-License is GNU General Public License v3.0
-
-
-
-
