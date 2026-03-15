@@ -67197,8 +67197,8 @@ You should download them and place the unzipped folders accordingly.
     └── node_encoder_best.pt
 
 20606 directories, 46537 files
-```
-</details>
+
+</details> ```
 
 ---
 
