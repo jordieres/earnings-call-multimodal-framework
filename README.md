@@ -150,6 +150,8 @@ The repository is organized to reproduce the methodological pipeline described i
 
 Some steps may require external datasets or pretrained models not included in this public release.
 
+The repository is located at https://github.com/jordieres/earnings-call-multimodal-framework, with the DOI: 10.5281/zenodo.19035654
+
 ---
 
 ## Citation
